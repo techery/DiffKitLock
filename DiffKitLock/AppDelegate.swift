@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AppSpectorSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        print("didFinishLaunchingWithOptions")
+        AppSpector.run(with: AppSpectorConfig(apiKey: "ios_YzBjMzY0M2EtZjY2MC00YWVmLTgyMmItMTc0MDdjNWQ3YWU2"))
+        
         return true
     }
 

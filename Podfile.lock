@@ -1,0 +1,22 @@
+PODS:
+  - AppSpectorSDK (1.4.4)
+  - DifferenceKit/Core (1.2.0)
+  - DifferenceKit/UIKitExtension (1.2.0):
+    - DifferenceKit/Core
+
+DEPENDENCIES:
+  - AppSpectorSDK
+  - DifferenceKit/UIKitExtension
+
+SPEC REPOS:
+  trunk:
+    - AppSpectorSDK
+    - DifferenceKit
+
+SPEC CHECKSUMS:
+  AppSpectorSDK: 6a13aefa91158ba6330cbeb034c480510372a8bd
+  DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
+
+PODFILE CHECKSUM: c969751c8ae45940094544349b79ac39e60f1a5d
+
+COCOAPODS: 1.11.2

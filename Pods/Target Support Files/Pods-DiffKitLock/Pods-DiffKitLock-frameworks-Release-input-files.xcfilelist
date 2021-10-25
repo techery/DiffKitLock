@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-DiffKitLock/Pods-DiffKitLock-frameworks.sh
+${PODS_ROOT}/AppSpectorSDK/AppSpectorSDK.framework
+${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85F979E7FB7862B510DF6335 /* Pods_DiffKitLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A151FF8C52A908B07C144663 /* Pods_DiffKitLock.framework */; };
 		D9C48B402726E40700EE097C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C48B3F2726E40700EE097C /* AppDelegate.swift */; };
 		D9C48B422726E40700EE097C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C48B412726E40700EE097C /* SceneDelegate.swift */; };
 		D9C48B442726E40700EE097C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C48B432726E40700EE097C /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28F49031089E80251F1A6D3B /* Pods-DiffKitLock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffKitLock.debug.xcconfig"; path = "Target Support Files/Pods-DiffKitLock/Pods-DiffKitLock.debug.xcconfig"; sourceTree = "<group>"; };
+		A151FF8C52A908B07C144663 /* Pods_DiffKitLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiffKitLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65DEFDCEAEAA56F2279EAA7 /* Pods-DiffKitLock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiffKitLock.release.xcconfig"; path = "Target Support Files/Pods-DiffKitLock/Pods-DiffKitLock.release.xcconfig"; sourceTree = "<group>"; };
 		D9C48B3C2726E40700EE097C /* DiffKitLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiffKitLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C48B3F2726E40700EE097C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9C48B412726E40700EE097C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F979E7FB7862B510DF6335 /* Pods_DiffKitLock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A7972CFE2DC56EE01D1C607 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28F49031089E80251F1A6D3B /* Pods-DiffKitLock.debug.xcconfig */,
+				D65DEFDCEAEAA56F2279EAA7 /* Pods-DiffKitLock.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D5725546F0CAF7CFC3CAC0C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A151FF8C52A908B07C144663 /* Pods_DiffKitLock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D9C48B332726E40700EE097C = {
 			isa = PBXGroup;
 			children = (
 				D9C48B3E2726E40700EE097C /* DiffKitLock */,
 				D9C48B3D2726E40700EE097C /* Products */,
+				1A7972CFE2DC56EE01D1C607 /* Pods */,
+				D5725546F0CAF7CFC3CAC0C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9C48B502726E40C00EE097C /* Build configuration list for PBXNativeTarget "DiffKitLock" */;
 			buildPhases = (
+				66B95DCA48C4E75A5867DB3A /* [CP] Check Pods Manifest.lock */,
 				D9C48B382726E40700EE097C /* Sources */,
 				D9C48B392726E40700EE097C /* Frameworks */,
 				D9C48B3A2726E40700EE097C /* Resources */,
+				4508621BF9CE8E6F872A7DF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4508621BF9CE8E6F872A7DF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiffKitLock/Pods-DiffKitLock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DiffKitLock/Pods-DiffKitLock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DiffKitLock/Pods-DiffKitLock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66B95DCA48C4E75A5867DB3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DiffKitLock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9C48B382726E40700EE097C /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		D9C48B512726E40C00EE097C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28F49031089E80251F1A6D3B /* Pods-DiffKitLock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		D9C48B522726E40C00EE097C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65DEFDCEAEAA56F2279EAA7 /* Pods-DiffKitLock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
